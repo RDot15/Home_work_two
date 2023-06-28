@@ -34,25 +34,21 @@
 6
 -> 5
 """
+
 # n = int(input("Размер массива "))
-# list_1 = []
-# for i in range(n):
-#     list_1 += [int(input("очередной элемент "))]
-# k = int(input("Заданный X "))
+# list_1=[int(input()) for i in range(n)]
 
-# list_1 = [2, 4, 1, 6, 8, 2, 9, 3, 2, 5]
-# k = 10
+# x=int(input())
+# min_range= abs(x-list_1[0])
+# element=list_1[0]
 
-# r = list_1[0]
-# delta = r - k if r > k else k - r
+# for i in list_1:
+#     if abs(x-1)<min_range:
+#         min_range=abs(x-1)
+#         element=1
+# print(element)
 
-# for m in list_1:
-#     deltanew = m - k if m > k else k - m
-#     if deltanew < delta:
-#         delta = deltanew
-#         r = m
 
-# print(r)
 
 """
 Задача 20: В настольной игре Скрабл (Scrabble) каждая буква имеет определенную
@@ -63,41 +59,39 @@
 """
 
 
-""" 
-k = 'lizard'
 
-# Исходные данные для подсчета
+# k = 'Blizard'
 
-costrules = (
-    (1, "A,E,I,O,U,L,N,S,T,R"),
-    (2, "D,G"),
-    (3, "B,C,M,P"),
-    (4, "F,H,V,W,Y"),
-    (5, "K"),
-    (8, "J,X"),
-    (10, "Q,Z"),
-#    (18, "Z"), Здесь я обаманул автотест
-    (1, "А,В,Е,И,Н,О,Р,С,Т"),
-    (2, "Д,К,Л,М,П,У"),
-    (3, "Б,Г,Ё,Ь,Я"),
-    (4, "Й,Ы"),
-    (5, "Ж,З,Х,Ц,Ч"),
-    (8, "Ш,Э,Ю"),
-    (10, "Ф,Щ,Ъ")
-)
+# # Исходные данные для подсчета
 
-cost = {}
+# costrules = (
+#     (1, "A,E,I,O,U,L,N,S,T,R"),
+#     (2, "D,G"),
+#     (3, "B,C,M,P"),
+#     (4, "F,H,V,W,Y"),
+#     (5, "K"),
+#     (8, "J,X"),
+#     (10, "Q,Z"),
 
-for m in costrules:
-    for n in m[1].split(","):
-        cost[n.upper()] = m[0]
+#     (1, "А,В,Е,И,Н,О,Р,С,Т"),
+#     (2, "Д,К,Л,М,П,У"),
+#     (3, "Б,Г,Ё,Ь,Я"),
+#     (4, "Й,Ы"),
+#     (5, "Ж,З,Х,Ц,Ч"),
+#     (8, "Ш,Э,Ю"),
+#     (10, "Ф,Щ,Ъ")
+# )
 
-# Основной алгоритм
+# cost = {}
 
-res = 0
+# for m in costrules:
+#     for n in m[1].split(","):
+#         cost[n.upper()] = m[0]
 
-for ch in k.upper():
-    res += cost[ch] if ch in cost.keys() else 0
 
-print(res)
- """
+# res = 0
+
+# for ch in k.upper():
+#     res += cost[ch] if ch in cost.keys() else 0
+
+# print(res)
